@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contacts List</h1>
+    </header>
+    <h3>Contact Management:</h3>
+    <section>
+        <button id="openPopupButton">Add (+)</button>
+        <button onclick="deleteContacts()">Delete (-)</button>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closePopupButton">&times;</span>
+                <h2 id="popupTitle">Contact Form</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="age">Age:</label>
+                    <input type="age" id="age" name="age" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <br><br>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+        <ul id="contactList"></ul>
+    </section>
+    <div class="footer-distributed">
+        <footer>
+            <p> HB Project  - Roaia Habashi & Rawan Habashi</p>
+        </footer>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
